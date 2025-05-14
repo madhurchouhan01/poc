@@ -1,0 +1,64 @@
+# parse_query:
+#   description: >
+#     Your task is to analyze the natural language query: "{query}" in the context of the existing campaign data snapshot: {data}.
+    
+#     Identify and extract only the fields explicitly or implicitly referenced in the query that correspond to the following editable campaign parameters:
+#       - "Audience Size"
+#       - "US Adult Population"
+#       - "Flight (months)"
+#       - "Total Budget"
+    
+#     Key Instructions:
+#       - Only include fields in the output if the query indicates a change to them.
+#       - Ensure all extracted values are numerically formatted (e.g., 3000000 not "3M", 2 not "two months").
+#       - Do not infer values not supported by the query—remain strictly evidence-based.
+#       - Your output must be a valid JSON object directly convertible to a Python dictionary.
+
+#   expected_output: >
+#     Return a JSON-formatted dictionary containing only the modified parameters and their updated values as derived from the query.
+
+#     Example Output:
+#     {{
+#       "param1" : "Audience Size"
+#       "param2" : "Total Budget"
+#       ...
+#       ...
+#     }}
+
+analyze_sensitivity:
+  description: >
+    You will receive:
+      1. A data object: {data}
+      2. A user query: "{query}"
+
+    Your responsibilities are:
+      - Analyze the user's query and determine **which single parameter** the user intends to tweak or experiment with.
+      - Return the **exact name** of the parameter (string) as listed below:
+          - "Audience Size"
+          - "US Adult Population"
+          - "Flight (months)"
+          - "Total Budget"
+      - Return the `data` object exactly as received—unchanged and valid JSON format.
+      - Do NOT infer or change any values.
+      - This structured output will be sent to a downstream calculation tool that performs the actual impact analysis.
+      - Finally, return the result from the tool as the final response.
+
+  expected_output: >
+    Return a well-formatted markdown report explaining the sensitivity outcome.
+
+    Example structure:
+
+    ## Sensitivity Analysis Report
+
+    **Parameter Analyzed:** "Flight (months)"
+
+    We analyzed the impact of varying "Flight (months)" from 3 to 9. Here’s what we observed:
+
+    - As the flight duration increased, **monthly budget per channel decreased**, leading to fewer impressions.
+    - **Gross Unique Reach** dropped from 9.1M at 3 months to 6.2M at 9 months.
+    - **Target Reach %** decreased steadily, from 65.3% to 42.8%.
+    - The decline was nearly linear, but sharpest between 3 to 5 months.
+
+    **Recommendation:** Keeping the flight between 3–5 months optimizes reach while preserving budget efficiency.
+
+    You must only return the final report. No JSON, no code blocks, no raw data.

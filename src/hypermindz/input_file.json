@@ -1,0 +1,160 @@
+{
+    "Inputs": {
+        "Audience Size": 2000000,
+        "US Adult Population": 258000000,
+        "Target Composition": 0.78,
+        "Flight (months)": 10
+    },
+    "Total Budget": 10000000,
+    "Channels": [
+        {
+            "Percent Allocation": 15,
+            "Channel": "OOH",
+            "Monthly Budget": 150000,
+            "CPM": 15,
+            "Target Comp Multiplier": 3,
+            "Target Audience Comp": 2.33,
+            "Gross Imps": 10000000,
+            "Target Imps": 232558
+        },
+        {
+            "Percent Allocation": 0,
+            "Channel": "Linear TV",
+            "Monthly Budget": 0,
+            "CPM": 25,
+            "Target Comp Multiplier": 3,
+            "Target Audience Comp": 2.33,
+            "Gross Imps": null,
+            "Target Imps": null
+        },
+        {
+            "Percent Allocation": 0,
+            "Channel": "Print",
+            "Monthly Budget": 0,
+            "CPM": 35,
+            "Target Comp Multiplier": 3,
+            "Target Audience Comp": 2.33,
+            "Gross Imps": null,
+            "Target Imps": null
+        },
+        {
+            "Percent Allocation": 10,
+            "Channel": "CTV",
+            "Monthly Budget": 100000,
+            "CPM": 35,
+            "Target Comp Multiplier": 40,
+            "Target Audience Comp": 31.01,
+            "Gross Imps": 2857143,
+            "Target Imps": 885936
+        },
+        {
+            "Percent Allocation": 10,
+            "Channel": "OLV",
+            "Monthly Budget": 100000,
+            "CPM": 20,
+            "Target Comp Multiplier": 40,
+            "Target Audience Comp": 31.01,
+            "Gross Imps": 5000000,
+            "Target Imps": 1550388
+        },
+        {
+            "Percent Allocation": 10,
+            "Channel": "Digital Display",
+            "Monthly Budget": 100000,
+            "CPM": 12,
+            "Target Comp Multiplier": 20,
+            "Target Audience Comp": 15.50,
+            "Gross Imps": 8333333,
+            "Target Imps": 1291990
+        },
+        {
+            "Percent Allocation": 15,
+            "Channel": "Integrated Partnerships",
+            "Monthly Budget": 150000,
+            "CPM": 75,
+            "Target Comp Multiplier": 5,
+            "Target Audience Comp": 3.88,
+            "Gross Imps": 2000000,
+            "Target Imps": 77519
+        },
+        {
+            "Percent Allocation": 10,
+            "Channel": "Audio: host-read",
+            "Monthly Budget": 100000,
+            "CPM": 60,
+            "Target Comp Multiplier": 5,
+            "Target Audience Comp": 3.88,
+            "Gross Imps": 1666667,
+            "Target Imps": 64599
+        },
+        {
+            "Percent Allocation": 10,
+            "Channel": "Audio: targeted",
+            "Monthly Budget": 100000,
+            "CPM": 30,
+            "Target Comp Multiplier": 40,
+            "Target Audience Comp": 31.01,
+            "Gross Imps": 3333333,
+            "Target Imps": 1033592
+        },
+        {
+            "Percent Allocation": 20,
+            "Channel": "Social: targeted",
+            "Monthly Budget": 200000,
+            "CPM": 25,
+            "Target Comp Multiplier": 50,
+            "Target Audience Comp": 38.76,
+            "Gross Imps": 8000000,
+            "Target Imps": 3100775
+        },
+        {
+            "Percent Allocation": 0,
+            "Channel": "Newsletters",
+            "Monthly Budget": 0,
+            "CPM": 60,
+            "Target Comp Multiplier": 50,
+            "Target Audience Comp": null,
+            "Gross Imps": null,
+            "Target Imps": null
+        },
+        {
+            "Percent Allocation": 0,
+            "Channel": "Other",
+            "Monthly Budget": 0,
+            "CPM": 30,
+            "Target Comp Multiplier": 30,
+            "Target Audience Comp": null,
+            "Gross Imps": null,
+            "Target Imps": null
+        },
+        {
+            "Percent Allocation": 0,
+            "Channel": "Paid Search",
+            "Monthly Budget": 0,
+            "CPM": 50,
+            "Target Comp Multiplier": 20,
+            "Target Audience Comp": null,
+            "Gross Imps": null,
+            "Target Imps": null
+        }
+    ],
+    "Summary": {
+        "Total Budget per Month": 1000000,
+        "Total Imps": {
+            "Gross": 41190476,
+            "Target": 8237357
+        },
+        "Frequency": {
+            "Gross": 15,
+            "Target": 25
+        },
+        "Unique Reach": {
+            "Gross": 2746031.75,
+            "Target": 329494.28
+        },
+        "Reach %": {
+            "Gross": 1.06,
+            "Target": 16.47
+        }
+    }
+}
